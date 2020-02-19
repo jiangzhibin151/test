@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人空间</title>
+</head>
+<body>
+
+<form action="/userinfo/" method="post">
+    <p>port<input type="text" name="user" required="required"></p>
+    <p>score<input type="text" name="score" required="required"></p>
+    <p><input type="submit" value="submit"></p>
+</form>
+
+<a href="{% url 'select' u %}">查看排名</a>
+</body>
+</html>

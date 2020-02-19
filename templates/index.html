@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>游戏排行榜</title>
+</head>
+<body>
+<br>
+{% for i in aa %}
+        <tr>
+            <td>{{ i.user }}:{{ i.score }}</td>
+            <br>
+        </tr>
+    {% endfor %}
+<p style="color: red;">me: {{ tmp.user }}:{{ tmp.score }}</p>
+
+</body>
+</html>
